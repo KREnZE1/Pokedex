@@ -4,7 +4,7 @@ import re  # Library for using REGEX
 
 
 class PokedexSpider(scrapy.Spider):
-    name = 'pokedex' # Name of the spider
+    name = 'pokedex'  # Name of the spider
     start_urls = ['https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)']  # Link where the spider starts to search
 
     # noinspection PyMethodOverriding
