@@ -20,7 +20,7 @@ class PokedexSpider(scrapy.Spider):
         height = re.search("\\d?\\d\\.?\\d\\d?\\sm", obj).group()
         weight = re.search("\\d{1,3}\\.?\\d{1,3}\\skg", obj).group()
 
-        #not runnable, because the user and password aren't correct
+        #not executable, because the user and password aren't correct
         mydb = mysql.connector.connect(host="localhost", user="user", password="password", database="webscrape",
                                        port=3306)
         cursor = mydb.cursor()
